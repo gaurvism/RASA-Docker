@@ -1,18 +1,3 @@
-#version: '3.0'
-#services:
-#  rasa:
-#    image: rasa/rasa:1.10.10-full
-#    ports:
-#      - 5005:5005
-#    volumes:
-#      - ./:/app
-#    command:
-#      - run
-#  action_server:
-#    image: rasa/rasa-sdk:latest
-#    volumes:
-#      - ./actions:/app/actions
-
 version: '3'
 services:
   rasa:
