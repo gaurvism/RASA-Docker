@@ -24,8 +24,6 @@
 * affirm
   - utter_check_role  
 * deny
-  - utter_contact_coo
-  - utter_or
   - utter_create_ticket
 * affirm
   - helpdesk_form
@@ -44,21 +42,11 @@
 * affirm
   - utter_check_role  
 * deny
-  - utter_contact_coo
-  - utter_or
   - utter_create_ticket
 * deny
   - utter_anything_else
 * deny
   - utter_goodbye
-
-## Network Sad Path
-* greet
-  - utter_intro
-* rights_inquiry
-  - utter_check_network
-* deny
-  - utter_portal_access
    
  ## Network Issue
 * greet
