@@ -47,13 +47,8 @@
 - unable to login as
 - please give rights
 - I do not have access
-- provide access to SMG Legal1
-- not opening from my login
 - attempting to access
 - trying to access
-- uploader rights
-- HR rights
-- role is not visible
 
 ## intent:network_issue
 - I am not able to login
@@ -68,17 +63,16 @@
 - Myself [Gaurav](name)
 - [Gaurav Sharma](name)
 - [h#46d](name)
-- [j](name)
 
 ## intent:domain_entry
-- My domain is [mind](domain)
-- [mssl](domain)
-- [smp](domain)
-- [smr](domain)
+- My domain is [abcd](domain)
+- [efgh](domain)
+- [jklm](domain)
+- [wxyz](domain)
 
 ## intent:email_entry
-- My email is [gaurav.sharma@mind-infotech.com](email)
-- [gaurav.sharma@mindinfotech.com](email)
+- My email is [gaurav.sharma@example.com](email)
+- [gaurav.sharma@example.com](email)
 - [abc.gl](email)
 
 ## intent:userId_entry
