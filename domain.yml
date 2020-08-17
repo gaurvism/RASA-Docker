@@ -1,0 +1,128 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+intents:
+- greet
+- goodbye
+- affirm
+- deny
+- bot_challenge
+- thanks
+- rights_inquiry
+- network_issue
+- name_entry
+- domain_entry
+- email_entry
+- userId_entry
+- location_entry
+- browser_entry
+- otp_request
+
+entities:
+- name
+- domain
+- email
+- userId
+- location
+- browser
+
+slots:
+  name:
+    type: unfeaturized
+  domain:
+    type: unfeaturized
+  email:
+    type: unfeaturized
+  userId:
+    type: unfeaturized
+  location:
+    type: unfeaturized
+  browser:
+    type: unfeaturized
+
+responses:
+  utter_greet:
+  - text: Hey! How are you?
+  utter_name_intro:
+  - text: Hi {name}, How can I help you?
+  utter_or:
+  - text: or
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_intro:
+  - text: Hi. I'm SMG Legal1 Chatbot. How can I help you?
+  utter_check_network:
+  - text: Are you on the SMG Network?
+  utter_check_role:
+  - text: Do you have specific right and role to access the portal?
+  utter_create_ticket:
+  - text: Do you want me to raise a ticket to Helpdesk?
+  utter_contact_coo:
+  - text: If you are trying to access as an uploader, please contact your COO
+  utter_portal_access:
+  - text: SMG Legal1 Portal is accessible only through the SMG Network. Kindly try
+      again on same Network or connect with your IT Team.
+  utter_anything_else:
+  - text: Ticket raised successfully. Is there anything else I can help you with?
+  utter_anything_else_global:
+  - text: Is there anything else I can help you with?
+  utter_ask_name:
+  - text: Please enter your name.
+  utter_ask_domain:
+  - text: Please enter your domain.
+  utter_ask_email:
+  - text: Please enter your email.
+  utter_ask_userId:
+  - text: Please enter your window userId.
+  utter_ask_location:
+  - text: Please enter your location.
+  utter_ask_browser:
+  - text: Please enter your browser name from which you are accessing the portal.
+  utter_slots_value:
+  - text: "I'm going to raise your ticket request with these values: \n - Name: {name}\
+      \ \n - Domain: {domain} \n - Email Id: {email} \n - Window User Id: {userId}\
+      \ \n - Location: {location} \n - Browser: {browser}"
+  utter_otp_check:
+  - text: Please check the inbox of your official email ID. Further you may also check
+      your spam/junk folder for OTP.
+  utter_invalid_name:
+  - text: Invalid entry. Kindly enter a valid name.
+  utter_name_range:
+  - text:  Length of name is 2 to 50 characters.
+  utter_invalid_email:
+  - text: Invalid email Id.
+
+actions:
+- utter_greet
+- utter_did_that_help
+- utter_happy
+- utter_goodbye
+- utter_intro
+- utter_check_network
+- utter_check_role
+- utter_portal_access
+- utter_anything_else
+- utter_name_intro
+- utter_contact_coo
+- utter_or
+- utter_anything_else_global
+- utter_otp_check
+- utter_create_ticket
+- utter_ask_name
+- utter_ask_domain
+- utter_ask_email
+- utter_ask_userId
+- utter_ask_location
+- utter_ask_browser
+- utter_slots_value
+- utter_invalid_name
+- utter_name_range
+- utter_invalid_email
+
+forms:
+- helpdesk_form
