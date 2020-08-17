@@ -10,20 +10,6 @@ from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.forms import FormAction
 import re
 
-# class ActionHelloWorld(Action):
-#
-#     def name(self) -> Text:
-#         return "action_hello_world"
-#
-#     def run(self, dispatcher: CollectingDispatcher,
-#             tracker: Tracker,
-#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-#
-#         dispatcher.utter_message(text="Hello World!")
-#
-#         return []
-
-
 class ActionTicketCreation(FormAction):
 
     def name(self) -> Text:
@@ -32,7 +18,8 @@ class ActionTicketCreation(FormAction):
     @staticmethod
     def required_slots(tracker: "Tracker") -> List[Text]:
         return ["name", "domain", "email", "userId", "location", "browser"]
-
+    
+    # Validation of Name
     def validate_name(
         self,
         value: Text,
@@ -56,7 +43,8 @@ class ActionTicketCreation(FormAction):
             # validation failed, set this slot to None, meaning the
             # user will be asked for the slot again
             return {"name": None}
-
+    
+    # Validation of Email
     def validate_email(
         self,
         value: Text,
