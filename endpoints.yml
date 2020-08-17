@@ -10,12 +10,8 @@
 # Server which runs your custom actions.
 # https://rasa.com/docs/rasa/core/actions/#custom-actions/
 
-#action_endpoint:
-#  url: "http://localhost:5055/webhook"
-
-#action_endpoint:
-#  url: http://app:5055/webhook
-
+# http://****:5055/webhook
+# Replace **** with Name of action server container
 action_endpoint:
   url: 'http://rasa-action-server:5055/webhook'
 
